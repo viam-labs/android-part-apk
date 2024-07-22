@@ -1,20 +1,13 @@
 package com.viam.sample.subpart;
-import android.util.Log;
-
 import com.google.protobuf.Struct;
 import com.google.protobuf.Value;
 import com.viam.sdk.core.component.generic.Generic;
 import com.viam.sdk.core.rpc.Server;
-
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-
 import io.grpc.Grpc;
 import io.grpc.InsecureServerCredentials;
 import io.grpc.ServerBuilder;
-import io.grpc.ServerCredentials;
-import io.grpc.TlsServerCredentials;
 
 public class MySubpart implements Runnable {
     final static String tag = "MySubpart";
