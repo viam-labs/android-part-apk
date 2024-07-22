@@ -36,12 +36,7 @@ public class MySubpart implements Runnable {
     public void run() {
         final Generic generic = new MyGeneric("example");
         final int port = 50051;
-
-//        io.grpc.okhttp.OkHttpServerBuilder
-//        Grpc.newServerBuilderForPort(port);
-//        ServerBuilder builder = io.grpc.okhttp.OkHttpServerBuilder.forPort(port);
-        ServerBuilder builder = io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder.forPort(port);
-//        ServerBuilder builder = ServerBuilder.forPort(port);
+        ServerBuilder builder = Grpc.newServerBuilderForPort(port, InsecureServerCredentials.create());
         try (Server server = new Server(List.of(generic), builder)) {
             server.start();
         }

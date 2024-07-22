@@ -60,16 +60,6 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     implementation("com.viam:viam-android-sdk:0.0.5")
     implementation("com.viam:viam-core-sdk:0.0.5")
-
-    // ServerBuilder implementation
-//    implementation("io.grpc:grpc-okhttp:1.65.0")
-//    implementation("io.grpc:grpc-protobuf-lite:1.65.0")
-//    implementation("io.grpc:grpc-stub:1.65.0")
-    implementation("io.grpc:grpc-netty-shaded:1.65.0")
-//    implementation("io.grpc:grpc-protobuf:1.65.0")
-//    implementation("io.grpc:grpc-stub:1.65.0")
-//    compileOnly("org.apache.tomcat:annotations-api:6.0.53") // necessary for Java 9+
-
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
