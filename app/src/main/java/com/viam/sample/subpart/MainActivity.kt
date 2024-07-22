@@ -16,7 +16,7 @@ class MainActivity() : ComponentActivity() {
     lateinit var thread: Thread
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        thread = Thread(MySubpart())
+        thread = Thread(RemotePart())
         thread.start()
         setContent {
             SubpartTheme {

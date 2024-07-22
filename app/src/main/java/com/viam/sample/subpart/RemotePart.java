@@ -9,7 +9,7 @@ import io.grpc.Grpc;
 import io.grpc.InsecureServerCredentials;
 import io.grpc.ServerBuilder;
 
-public class MySubpart implements Runnable {
+public class RemotePart implements Runnable {
     final static String tag = "MySubpart";
     public static class MyGeneric extends Generic {
         public MyGeneric(final String name) {
